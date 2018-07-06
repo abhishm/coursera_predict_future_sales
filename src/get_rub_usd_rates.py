@@ -15,5 +15,5 @@ for year, month in zip(years, months):
     rate = c.get_rate("USD", "RUB", date)
     rates.append(rate)
         
-df = pd.DataFrame({"year": years, "month": months, "rates": rates})
+df = pd.DataFrame({"year": years, "month": months, "rate": rates})
 df.to_csv("../data/conversion_rates.csv", index=False)
